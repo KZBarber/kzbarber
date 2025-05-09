@@ -1,0 +1,78 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KZ'Barber - Prise de rendez-vous</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #0f1f14;
+      color: #f1f1f1;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+    header {
+      padding: 20px;
+      background-color: #1e2d22;
+    }
+    header img {
+      max-width: 150px;
+    }
+    h1 {
+      margin-top: 10px;
+      font-size: 2em;
+    }
+    .container {
+      max-width: 500px;
+      margin: 40px auto;
+      padding: 20px;
+      background-color: #243528;
+      border-radius: 10px;
+    }
+    form input, form select, form button {
+      width: 100%;
+      margin-bottom: 15px;
+      padding: 12px;
+      border: none;
+      border-radius: 5px;
+      font-size: 1em;
+    }
+    form button {
+      background-color: #5cb85c;
+      color: white;
+      cursor: pointer;
+    }
+    form button:hover {
+      background-color: #4cae4c;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="IMG_3835.png" alt="Logo KZ'Barber">
+    <h1>KZ'Barber</h1>
+    <p>Coupe & barbe sur rendez-vous – style garanti</p>
+  </header>
+
+  <div class="container">
+    <h2>Prendre rendez-vous</h2>
+    <form action="mailto:ton.email@example.com" method="POST" enctype="text/plain">
+      <input type="text" name="Nom" placeholder="Votre nom" required>
+      <input type="tel" name="Téléphone" placeholder="Téléphone" required>
+      <select name="Service" required>
+        <option value="">-- Choisir un service --</option>
+        <option value="Coupe homme">Coupe homme</option>
+        <option value="Barbe">Taille de barbe</option>
+        <option value="Coupe + Barbe">Coupe + Barbe</option>
+      </select>
+      <input type="datetime-local" name="Date" required>
+      <button type="submit">Envoyer la demande</button>
+    </form>
+  </div>
+
+</body>
+</html>
